@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Click Counter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Click Counter</h1>
+  <button id="myButtonId">Increase</button>
+  <button id="btnDecrease">Decrease</button>
+  <button id="btnReset">Reset</button>
+
+  <p>Current count: <span id="displayCount">0</span></p>
+    
+  <script>
+    let count = 0;
+    let maxCount = 10;
+
+    const myButton = document.getElementById('myButtonId');
+    const btnReset = document.getElementById('btnReset');
+    const display = document.getElementById('displayCount');
+    const btnDecrease = document.getElementById('btnDecrease');
+    
+    myButton.addEventListener('click', function() {
+      if (count < maxCount) {
+        count++;
+      }
+      display.textContent = count;
+    });
+
+    btnReset.addEventListener('click', function() {
+      count = 0;
+      display.textContent = count;
+    });
+
+    btnDecrease.addEventListener('click', function() {
+      if (count > 0) {
+        count--;
+      }
+      display.textContent = count;
+    });
+  </script>
+</body>
+</html>
