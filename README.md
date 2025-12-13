@@ -1,4 +1,4 @@
-# Python Practice – Day 2: Loops & Functions
+# Python Practice –  :Loops & Functions
 
 
 Print numbers divisible by 3, 4, 5  
