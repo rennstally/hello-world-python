@@ -1,18 +1,11 @@
-# Python Practice –  :Loops & Functions
+# Attention Tracker (Linux / X11)
 
+A small Python project that tracks how often you switch windows and how long you stay on each one.
+Uses `xdotool` and works on X11 sessions.
 
-Print numbers divisible by 3, 4, 5  
-  - Odd/Even check  
-# Hello World Python
+## Requirements
+- Python 3
+- xdotool
 
-This is a simple Python project created to practice Git, GitHub, and basic Python execution.  
-The goal of this repository is learning how to manage projects using GitHub properly.
-
-## What this project does
-
-It runs a basic Python script that prints a message to the terminal.  
-This project is meant as a starting point for understanding:
-- Git repositories
-- Commits and version control
-- GitHub project structure
-
+```bash
+sudo pacman -S xdotool
